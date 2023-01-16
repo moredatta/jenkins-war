@@ -9,7 +9,7 @@ pipeline{
             
                 
                 sh 'ls'
-                sh 'cd /var/lib/jenkins/workspace/spring/demo'
+                sh 'cd ./demo'
              
                
                 sh 'ls'
