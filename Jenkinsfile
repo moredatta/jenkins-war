@@ -10,7 +10,7 @@ pipeline{
                 
                 sh 'ls'
                 sh 'cd demo'
-                sh 'ls'
+                sh 'pwd'
                 sh 'mvn clean'
                 sh 'mvn install -U'
             }
