@@ -5,7 +5,7 @@ pipeline{
         stage('maven build') {
             steps {
                 sh 'ls'
-                sh 'dir ('subdir') {
+                sh 'dir ('demo') {
                         sh 'pwd'
                             }'
                 sh 'ls'
