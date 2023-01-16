@@ -10,6 +10,7 @@ pipeline{
                 
                 sh 'ls'
                 sh 'cd demo'
+                sh 'ls'
              
                
                
