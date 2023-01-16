@@ -4,17 +4,15 @@ pipeline{
     
     
         
-        stage('maven build') {
+        stage('maven location') {
             steps {
             
                 
                 sh 'ls'
-                sh 'cd ./demo'
+                sh 'cd demo'
              
                
-                sh 'ls'
-                sh 'mvn clean'
-                sh 'mvn install -U'
+               
             }
                
         }
