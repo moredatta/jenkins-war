@@ -12,7 +12,7 @@ pipeline{
                  cd /var/lib/jenkins/workspace/spring/demo
                  ls
                  mvn clean
-                 mvn install -U
+              
                  '''
                 
              
