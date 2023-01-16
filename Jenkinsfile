@@ -9,7 +9,7 @@ pipeline{
             
                 
                 sh 'ls'
-                sh 'cd demo'
+                sh 'dir demo'
                 sh 'ls'
              
                
