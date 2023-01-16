@@ -5,7 +5,9 @@ pipeline{
         stage('maven build') {
             steps {
                 sh 'ls'
-                sh 'cd demo'
+                sh 'dir ('subdir') {
+                        sh 'pwd'
+                            }'
                 sh 'ls'
                 sh 'mvn clean'
                 sh 'mvn install -U'
