@@ -9,7 +9,7 @@ pipeline{
             
                 sh 'pwd'
                 sh 'ls'
-                sh 'cd /var/lib/jenkins/workspace/spring/demo'
+                sh 'cd /var/lib/jenkins/workspace/spring/demo | ls'
                 sh 'pwd'
                 sh 'ls'
              
