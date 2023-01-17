@@ -4,6 +4,12 @@ pipeline{
 		DOCKERHUB_CREDENTIALS = credentials('DockerHub')
 	}
     stages {
+	    stage('name'){
+		    steps {
+			    
+			    sh'echo $JOB_NAME
+	                    sh'job=${JOB_NAME}'
+	                    sh'echo $job'
     
     
         
@@ -21,13 +27,7 @@ pipeline{
 //                  '''
 //             }
 //         }
-	stage('name'){
-		steps{
-			sh'echo $JOB_NAME'
-			sh'job= ${JOB_NAME}'
-	                sh'echo $job'
-		}
-	}
+	
 		    
 	
 	    
