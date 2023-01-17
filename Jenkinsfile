@@ -22,10 +22,10 @@ pipeline{
 //             }
         }
 	stage('docker build'){
-	   steps{
-		 sh'echo $JOB_NAME'
-	         sh'job= ${JOB_NAME}'
-	         sh'echo $job'
+		steps{
+			sh'echo $JOB_NAME'
+			sh'job= ${JOB_NAME}'
+	                sh'echo $job'
 	   }
 	}
          stage('docker build'){
