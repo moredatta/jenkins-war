@@ -20,7 +20,7 @@ pipeline{
               
 //                  '''
 //             }
-        }
+//         }
 	stage('docker build'){
 		steps{
 			sh'echo $JOB_NAME'
