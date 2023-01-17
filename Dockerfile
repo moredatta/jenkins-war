@@ -1,3 +1,4 @@
 FROM tomcat:8.5.47-jdk8-openjdk
-COPY /var/lib/jenkins/workspace/${JOB_NAME}/demo/*.war /usr/local/tomcat/webapps
+RUN echo $job
+# COPY /var/lib/jenkins/workspace/$job/demo/*.war /usr/local/tomcat/webapps
 EXPOSE 8081
