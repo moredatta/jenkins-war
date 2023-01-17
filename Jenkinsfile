@@ -10,6 +10,8 @@ pipeline{
 			    sh'echo $JOB_NAME'
 	                    sh'job=${JOB_NAME}'
 	                    sh'echo $job'
+		    }
+	    }
     
     
         
