@@ -12,7 +12,7 @@ pipeline{
             
                 sh'''
                  pwd
-                 cd /var/lib/jenkins/workspace/${env.JOB_NAME}/demo
+                 cd /var/lib/jenkins/workspace/${JOB_NAME}/demo
                  ls
                  mvn clean
                  mvn install
