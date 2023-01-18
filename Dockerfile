@@ -1,4 +1,6 @@
 FROM tomcat:8.5.47-jdk8-openjdk
-RUN echo $job
-# COPY /var/lib/jenkins/workspace/$job/demo/*.war /usr/local/tomcat/webapps
-EXPOSE 8081
+WORKDIR /usr/local/tomcat/webapps/
+#COPY home/varsha/Makefile .
+#COPY ./demo-0.0.1-SNAPSHOT.war .
+ADD ./*.war ./demo.war
+#EXPOSE 8081
